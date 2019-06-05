@@ -1,0 +1,249 @@
+<!-- <ng-template [ngIf]="false" [ngIfElse]="second">>
+  kkkk
+</ng-template>
+<ng-template #second>
+ lllll
+</ng-template> -->
+<!-- <ng-container *ngFor="let i of abc">
+  <div *ngIf="i.name === 'mehul'">
+    {{i.value}}
+  </div>
+</ng-container>
+
+<div *ngFor="let i of abc">
+  <div *ngIf="i.name === 'mehul'">
+    {{i.value}}
+  </div>
+</div> -->
+
+<!-- <ng-container *ngTemplateOutlet="newsample; context:sampleobj">
+
+</ng-container>
+
+<ng-template #newsample let-ansObj="temp">
+new version {{ansObj}}
+</ng-template>  -->
+
+<!-- <div class="card">
+  <div class="card-header">
+    <ng-content class="header"></ng-content>
+  </div>
+  <div class="card-body">
+    <ng-content class="body"></ng-content>
+  </div>
+</div> -->
+
+<!-- <h1 class="card">
+  {{akshay | squareroot}}
+</h1> -->
+
+<!-- <div class="text-center">Welcome To Project page</div>
+<div  *ngFor="let i of ui">
+  <div #mehul class="ik" (click)="pageRef(mehul);"  style="width:20px;height:20px;border:1px solid;position: relative;">
+    <span style="position: absolute;left: 30px;">{{i.name}}</span>
+  </div>
+</div>
+<div id="result">{{resultArray | json}}</div> -->
+
+<!-- <div class="ludomain">
+  <select [(ngModel)]= "nObj.me">
+    <option value="" selected="selected">Select</option>
+    <option  *ngFor="let u of SelectionofCssProperties" value="{{u.name}}">{{u.name}}</option>
+  </select>
+  {{nObj.me | json}}
+</div> -->
+<!-- ddd
+<ng-container  *ngFor="let h of ui">
+<div *ngIf="h.name === 'akshay' ">
+  {{h}}
+</div>
+</ng-container> -->
+
+<!-- <div class="sudo-home">
+  <div class="" style="float:left;">
+    <div class="left-container same-size b-red-left">
+      <div>
+        <div class="col-md-6 h-70px center"><p class="cube-h-w b-red">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px red-player"></span>
+        </p> </div>
+        <div class="col-md-6 h-70px center"><p class="cube-h-w b-red">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px red-player"></span>
+        </p></div>
+        <div class="col-md-6 h-70px center"><p class="cube-h-w b-red">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px red-player"></span>
+        </p></div>
+        <div class="col-md-6 h-70px center"><p class="cube-h-w b-red">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px red-player"></span>
+        </p></div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <div class=" h-200px b-white" style="float:left;">
+    <div class="" style="float:left;">
+      <div *ngFor="let i of sixStep">
+        <div style="height:33.33px;width:33.33px;border:1px solid"> </div>
+    </div>
+    </div>
+    <div class="" style="float:left;">
+      <div *ngFor="let i of sixStep">
+        <div style="height:33.33px;width:33.33px;border:1px solid;background: yellow"> </div>
+    </div>
+    </div>
+    <div class="" style="float:left;">
+      <div *ngFor="let i of sixStep">
+        <div [ngClass]="{'b-yellow': i==2}" style="height:33.33px;width:33.33px;border:1px solid"> </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="" style="float:left;">
+    <div class="right-container same-size f-r b-yellow-left">
+      <div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-yellow">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px yellow-player"></span>
+        </p></div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-yellow">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px yellow-player"></span>
+        </p></div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-yellow">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px yellow-player"></span>
+        </p></div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-yellow">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px yellow-player"></span>
+        </p></div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+ <div >
+  <div class="" style="float:left;width:200px;">
+    <div class="">
+      <div *ngFor="let i of sixStep">
+        <div  [ngClass]="{'b-red': i==2}" style="height:33.33px;width:33.33px;border:1px solid;float: left;"> </div>
+    </div>
+    </div>
+    <div class="">
+      <div *ngFor="let i of sixStep">
+        <div style="height:33.33px;width:33.33px;border:1px solid;background: red;float: left;"> </div>
+    </div>
+    </div>
+    <div class="">
+      <div *ngFor="let i of sixStep">
+        <div style="height:33.33px;width:33.33px;border:1px solid;float: left;"> </div>
+    </div>
+    </div>
+  </div>
+  <div class="" style="    width: 99px;
+  height: 99px;
+  float: left;">
+    <div class="middle-box" style="width: 99px;
+    height: 100px;position: relative;">
+      <p class="l1"></p>
+      <p class="l2"></p>
+      <p class="l3"></p>
+      <p class="l4"></p>
+    </div>
+  </div>
+  <div class="" style="float:left;width:200px;">
+    <div class="">
+      <div *ngFor="let i of sixStep">
+        <div style="height:33.33px;width:33.33px;border:1px solid;float: left;"> </div>
+    </div>
+    </div>
+    <div class="">
+      <div *ngFor="let i of sixStep">
+        <div style="height:33.33px;width:33.33px;border:1px solid;background: blue;float: left;"> </div>
+    </div>
+    </div>
+    <div class="">
+      <div *ngFor="let i of sixStep">
+        <div [ngClass]="{'b-blue': i==5}" style="height:33.33px;width:33.33px;border:1px solid;float: left;"> </div>
+    </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+  <div class="" style="float:left;">
+    <div class="bottom-left-container same-size b-green-bottom-left">
+      <div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-green">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px green-player"></span>
+        </p></div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-green">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px green-player"></span>
+        </p></div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-green">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px green-player"></span>
+        </p></div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-green">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px green-player"></span>
+        </p></div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <div class=" h-200px b-white" style="float:left;">
+    <div class=" " style="float:left;">
+      <div *ngFor="let i of sixStep">
+        <div [ngClass]="{'b-green': i==5}" style="height:33.33px;width:33.33px;border:1px solid"> </div>
+    </div>
+    </div>
+    <div class=" " style="float:left;">
+      <div *ngFor="let i of sixStep">
+        <div style="height:33.33px;width:33.33px;border:1px solid;background: green"> </div>
+    </div>
+    </div>
+    <div class=" " style="float:left;">
+      <div *ngFor="let i of sixStep">
+        <div  style="height:33.33px;width:33.33px;border:1px solid"> </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="" style="float:left;">
+    <div class="bottom-right-container same-size f-r b-blue-bottom-right">
+      <div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-blue">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px blue-player"></span>
+        </p></div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-blue">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px blue-player"></span>
+        </p></div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-blue">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px blue-player"></span>
+        </p></div>
+        <div class="col-md-6 h-70px center"> <p class="cube-h-w b-blue">
+          <span class="glyphicon glyphicon-pawn f-28px m-t-27px blue-player"></span>
+        </p></div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+
+<div>
+  <p>Select Player</p>
+  <div *ngFor="let i of Acheck">
+   <div #mehul class="checkbox-div" (click)="checkPlayer(mehul)">{{i}}</div>
+  </div> 
+  you selected {{result}} player gamek
+
+  <div>
+    <button type="button" (click) = "startGame(result)">Start</button>
+  </div>
+</div>
+<button (click)="clickPlay()" type="button" class="btn-primary">Click play</button>
+<h1 id="h" class="text-center"></h1> -->
+
+<div hilighted>mehul</div>
+<span [appShadow]="'hotpink'"
+  [appShadowX]="'12px'"
+  [appShadowY]="'6px'"
+  [appShadowBlur]="'30px'">Alligator</span>
+
+<div class="junier">nnnnnnnnnnnnnnnnnnnn</div>
+{{sendChild}}ffffffff
+<input type="submit" (click)="sendPArentData(sendChild)">

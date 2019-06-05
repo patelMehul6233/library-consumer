@@ -1,0 +1,50 @@
+
+<div>
+        <!-- <nav>
+            <a routerLink="project">project</a>&nbsp;
+            <a routerLink="conversation">conversation</a>&nbsp;
+            <a routerLink="user">user</a>&nbsp;
+          </nav> -->
+          <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+            <div class="container">
+                <a class="navbar-brand">Angular Router</a>
+                <ul class="nav navbar-nav" routerLinkActive="active">
+                    <li class="nav-item"><a class="nav-link" routerLink="project">project</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="conversation">conversation</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="user">user</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<router-outlet></router-outlet>
+<router-outlet  name="sidebar"></router-outlet>
+<a [routerLink]="[{ outlets: { primary: ['conversation'],sidebar: ['conversation'] } }]">
+    conversation List
+</a>
+<button type="button" (click) = "mehul('evening','10:30 pm')">click</button>
+<!-- <app-project>
+    <div class="header">
+        Header
+    </div>
+    <div class="body">
+        Body
+    </div>
+</app-project> -->
+<button type="button" (click)="clickmehul('','')">clickedbro</button>
+<router-outlet></router-outlet>
+<div>
+    <input type="radio" name="colors" (click)="color='lightgreen'">Green
+    <input type="radio" name="colors" (click)="color='yellow'">Yellow
+    <input type="radio" name="colors" (click)="color='cyan'">Cyan
+  </div>
+  <p [hilighted]="color" >Highlight me!</p>
+  <br>
+  <br>
+  <div  class="mehul">cccdcddca</div>
+<!-- <span [hilighted]="'hotpink'"
+      [hilightedX]="'12px'"
+      [hilightedY]="'6px'"
+      [hilightedBlur]="'30px'">Alligator</span> -->
+     <h1>{{dd}}</h1> 
+    <input type="text" #mehul>
+    <app-project [sendChild]="mehul.value" (sendParent)="dd=$event"></app-project>
